@@ -1,5 +1,7 @@
 .btn {
 
+    //button element those not have a link and visited state
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -10,6 +12,10 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+
+        //Change for button element
+        border: none;
+        cursor: pointer;
     }
 
     &::after {
@@ -34,6 +40,15 @@
         }
     }
 
+    &--green2 {
+        background-color: $color-primary;
+        color: $color-dark-grey;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
     &--green {
         background-color: $color-primary;
         color: $color-white;
@@ -53,7 +68,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
     }
