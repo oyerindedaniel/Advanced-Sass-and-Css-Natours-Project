@@ -13,7 +13,7 @@
         border-radius: .2rem;
         background-color: rgba($color-white, .5);
         border: none;
-        border-bottom: .3rem solid transparent;
+        //        border-bottom: .3rem solid transparent;
         width: 90%;
         display: block;
         transition: all .3s;
@@ -36,7 +36,6 @@
         &::-webkit-input-placeholder {
             color: $color-dark-grey-2;
         }
-
 
     }
 
